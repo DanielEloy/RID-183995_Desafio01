@@ -1,0 +1,147 @@
+*{
+    margin: 0%;
+    font-family: 'inter';
+}
+
+#titulo{ 
+    width: 250%;
+    height: 350px;
+    background: #303030;
+    color: #F9F9F9;
+    
+    font-size: 180%;
+}
+
+#titulo_principal{/*Tradição em projetos de arquitetura*/
+/*Layout*/
+    padding: 9%;
+}
+
+#titulo_secundario{
+    text-align: center;
+    margin-left: 10%;
+    margin-top: -09%;
+    font-family: Inter;
+    opacity: 90%;
+}
+
+#menuinformacional{/*  */
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 150px;
+    padding: 10%;
+    font-size: 180%;
+    
+}
+#textoinformativo{
+    margin-left: -35%;
+}
+
+#textoinformativo1{
+    margin-left: -40%;
+}
+
+#textoinformativo2{
+    margin-left: -150%;
+}
+
+#secaoprojeto{
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    width: 1440px;
+    height: 638px;
+    top: 1478px;
+}
+
+#projetoimagem
+ {
+    margin: 25px 25px 50px 100px;
+    width: 510px;
+    height: 605px;
+    top: 781px;
+    left: 876px;
+    gap: 0px;
+    border-radius: 30px 0px 0px 0px;
+    opacity: 0px;
+    margin-right: 100px;
+}
+
+#tituloprojeto{/* Arquitetos com História e Experiência.*/
+    margin-top: 25%;
+    text-align-last: center;
+}
+
+#textosecundario{/* ós realizamos desde 2002 projetos e gerenciamento... */
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align-last: center;
+}
+
+#titulo_secundario{
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}   
+
+
+#divfomulario{
+    width: 250%;
+}
+
+#tituloformulario{
+    background:#303030;
+    color:#FFFFFF;
+    font-size: 21px;
+    padding-top: 32px;
+}
+
+
+#formulario{
+    text-align: center;
+    background: #303030;
+    color: #FFFFFF;
+    margin-top: 5%;
+}
+
+
+input{
+    width: 300px;
+    height: 30px;
+    background-color: #FFFFFF;
+    margin: 15px;
+    border: 0px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+button{
+    background: #C07212;
+    height: 40px;
+    width: 250px;
+    color: #FFFFFF;
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #cfe416;
+    color: white;
+    transform: translateY(-7px);
+    box-shadow: 0px 15px 20px #05103081;
+    transition-duration: 0.3s;
+}
+
+#marca_registrada{
+    width: 223%;
+    text-align: end;
+}
