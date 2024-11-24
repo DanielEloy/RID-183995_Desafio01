@@ -1,147 +1,175 @@
-*{
-    margin: 0%;
-    font-family: 'inter';
+* {
+    margin: 0; /* Remove todas as margens padrão */
+    font-family: 'Inter', sans-serif; /* Define a fonte 'Inter' e, caso não exista, uma fonte genérica sans-serif */
 }
 
-#titulo{ 
-    width: 250%;
-    height: 350px;
-    background: #303030;
-    color: #F9F9F9;
-    
-    font-size: 180%;
+#titulo {
+    width: 100%; /* Largura total da tela */
+    max-width: 1440px; /* Limita a largura máxima */
+    height: 475px; /* Altura fixa */
+    background: #303030; /* Cor de fundo */
+    color: #F9F9F9; /* Cor do texto */
+    display: flex; /* Flexbox para alinhamento */
+    flex-direction: column; /* Organiza os títulos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    margin: 0 auto; /* Centraliza horizontalmente em layouts maiores */
+    padding: 2rem; /* Espaçamento interno */
+    text-align: left; /* Alinha o texto ao lado esquerdo */
 }
 
-#titulo_principal{/*Tradição em projetos de arquitetura*/
-/*Layout*/
-    padding: 9%;
+.titulo-principal {
+    font-size: 3rem; /* Tamanho maior para o título principal */
+    font-weight: bold; /* Deixa o título principal em negrito */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título principal */
+    margin-left: 62px; /* Margem à esquerda de 62px */
 }
 
-#titulo_secundario{
-    text-align: center;
-    margin-left: 10%;
-    margin-top: -09%;
-    font-family: Inter;
-    opacity: 90%;
+.titulo-secundario {
+    font-size: 1.5rem; /* Tamanho do título secundário */
+    opacity: 0.9; /* Levemente transparente */
+    font-weight: 400; /* Menor peso de fonte para o secundário */
+    margin-top: 0; /* Remove o espaço acima do título secundário */
+    margin-left: 62px; /* Margem à esquerda de 62px */
 }
 
-#menuinformacional{/*  */
-    display: grid;
-    grid-auto-flow: column;
-    margin-left: 150px;
-    padding: 10%;
-    font-size: 180%;
-    
-}
-#textoinformativo{
-    margin-left: -35%;
-}
-
-#textoinformativo1{
-    margin-left: -40%;
+#menuinformacional {
+    display: grid; /* Usando grid para o layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    grid-template-rows: auto auto; /* 2 linhas automáticas */
+    gap: 1rem; /* Espaçamento entre os itens */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 2rem; /* Espaçamento interno */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    margin-left: 62px; /* Margem à esquerda de 62px */
 }
 
-#textoinformativo2{
-    margin-left: -150%;
+.informativo-item {
+    display: flex; /* Usando flexbox para cada item */
+    flex-direction: column; /* Empilha h2 e p verticalmente */
+    align-items: flex-start; /* Alinha horizontalmente à esquerda */
+    justify-content: center; /* Centraliza verticalmente */
 }
 
-#secaoprojeto{
-    display: grid;
-    grid-auto-flow: column;
-    columns: auto;
-    width: 1440px;
-    height: 638px;
-    top: 1478px;
+.informativo-numero {
+    font-size: 2rem; /* Destaque para o número */
+    font-weight: bold; /* Deixa o número em negrito */
+    color: #303030; /* Cor do número */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo do número */
 }
 
-#projetoimagem
- {
-    margin: 25px 25px 50px 100px;
-    width: 510px;
-    height: 605px;
-    top: 781px;
-    left: 876px;
-    gap: 0px;
-    border-radius: 30px 0px 0px 0px;
-    opacity: 0px;
-    margin-right: 100px;
+.informativo-texto {
+    font-size: 1rem; /* Tamanho do texto abaixo do número */
+    color: #606060; /* Cor do texto */
 }
 
-#tituloprojeto{/* Arquitetos com História e Experiência.*/
-    margin-top: 25%;
-    text-align-last: center;
+#secaoprojeto {
+    display: grid; /* Usando grid para o layout */
+    grid-template-columns: 1fr 1fr; /* Duas colunas de mesmo tamanho */
+    align-items: center; /* Centraliza verticalmente os itens */
+    gap: 2rem; /* Espaçamento entre o texto e a imagem */
+    width: 100%; /* Largura total */
+    max-width: 1440px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    padding: 2rem; /* Espaçamento interno */
 }
 
-#textosecundario{/* ós realizamos desde 2002 projetos e gerenciamento... */
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align-last: center;
+#projetotexto {
+    display: flex; /* Usando flexbox para o texto */
+    flex-direction: column; /* Empilha h1 e p verticalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    padding: 1rem; /* Espaçamento interno */
 }
 
-#titulo_secundario{
-    color: #FFFFFF;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    
-}   
-
-
-#divfomulario{
-    width: 250%;
+#tituloprojeto {
+    font-size: 2.5rem; /* Tamanho do título do projeto */
+    font-weight: bold; /* Negrito para o título */
+    color: #303030; /* Cor do título */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
 }
 
-#tituloformulario{
-    background:#303030;
-    color:#FFFFFF;
-    font-size: 21px;
-    padding-top: 32px;
+#textosecundario {
+    font-size: 1rem; /* Tamanho do texto secundário */
+    color: #606060; /* Cor do texto */
+    line-height: 1.5; /* Maior altura de linha para facilitar a leitura */
 }
 
-
-#formulario{
-    text-align: center;
-    background: #303030;
-    color: #FFFFFF;
-    margin-top: 5%;
+#projetoimagem {
+    width: 100%; /* Largura da imagem é 100% do contêiner */
+    max-width: 510px; /* Limita a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 30px 0 0 0; /* Arredonda o canto superior esquerdo da imagem */
+    object-fit: cover; /* A imagem preenche o espaço disponível, cortando se necessário */
 }
 
-
-input{
-    width: 300px;
-    height: 30px;
-    background-color: #FFFFFF;
-    margin: 15px;
-    border: 0px;
-    border-radius: 5px;
-    padding-left: 10px;
+#tituloprojeto {
+    margin-top: 25%; /* Distância do topo da imagem */
+    text-align: center; /* Alinha o título ao centro */
 }
 
-button{
-    background: #C07212;
-    height: 40px;
-    width: 250px;
-    color: #FFFFFF;
-    border: 0px;
-    border-radius: 5px;
-    margin-bottom: 50px;
-    font-weight: bolder;
-    cursor: pointer;
+#textosecundario {
+    margin-left: 10%; /* Margem à esquerda */
+    margin-right: 10%; /* Margem à direita */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
-button:hover{
-    background-color: #cfe416;
-    color: white;
-    transform: translateY(-7px);
-    box-shadow: 0px 15px 20px #05103081;
-    transition-duration: 0.3s;
+#divfomulario {
+    width: 100%;
 }
 
-#marca_registrada{
-    width: 223%;
-    text-align: end;
+#tituloformulario {
+    background: #303030; /* Cor de fundo do título do formulário */
+    color: #FFFFFF; /* Cor do texto */
+    font-size: 21px; /* Tamanho da fonte */
+    padding-top: 32px; /* Espaçamento superior */
+}
+
+#formulario {
+    text-align: center; /* Alinha o conteúdo do formulário ao centro */
+    background: #303030; /* Cor de fundo do formulário */
+    color: #FFFFFF; /* Cor do texto */
+    margin-top: 5%; /* Distância superior */
+}
+
+input {
+    width: 300px; /* Largura dos campos de entrada */
+    height: 30px; /* Altura dos campos */
+    background-color: #FFFFFF; /* Cor de fundo do campo */
+    margin: 15px; /* Espaçamento entre os campos */
+    border: 0px; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding-left: 10px; /* Espaçamento interno à esquerda */
+}
+
+button {
+    background: #C07212; /* Cor de fundo do botão */
+    height: 40px; /* Altura do botão */
+    width: 250px; /* Largura do botão */
+    color: #FFFFFF; /* Cor do texto do botão */
+    border: 0px; /* Remove a borda do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 50px; /* Espaçamento abaixo do botão */
+    font-weight: bolder; /* Deixa o texto mais forte */
+    cursor: pointer; /* Cursor em forma de mãozinha */
+}
+
+button:hover {
+    background-color: #cfe416; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    transform: translateY(-7px); /* Animação ao passar o mouse */
+    box-shadow: 0px 15px 20px #05103081; /* Sombra ao passar o mouse */
+    transition-duration: 0.3s; /* Duração da transição da animação */
+}
+
+#marca_registrada {
+    position: fixed; /* Usamos "fixed" para fixar o texto na tela */
+    bottom: 0; /* Alinha ao fundo da página */
+    left: 0; /* Alinha à esquerda */
+    padding: 1rem; /* Espaçamento interno */
+    font-size: 0.8rem; /* Tamanho da fonte */
+    color: #F9F9F9; /* Cor do texto (branco) */
+    text-align: right; /* Alinha o texto à direito */
+    margin: 0; /* Remove qualquer margem extra */
+    width: 100%; /* Garante que o texto ocupe a largura total */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
 }
